@@ -1,0 +1,17 @@
+.landing-page {
+    margin: auto;
+}
+.landing-page img {
+    width: 100%;
+}
+
+.landing-page h1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
