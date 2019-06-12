@@ -1,9 +1,9 @@
 import React from 'react';
-// import './intro.css';
+import './intro.css';
 
 export default function Intro(){
     return(
-        <section className="intro">
+        <section className="intro" id="intro">
             <h1>Impressionism</h1>
             <p>Impressionism can be considered the first distinctly
              modern movement in painting. Developing in Paris in

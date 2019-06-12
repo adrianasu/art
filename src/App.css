@@ -3,12 +3,56 @@
 }
 
 body {
+    width: 100%;
     background-color: #f6f6f6;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App{
+h1 {
+    color: #34314f;
+}
 
-    font-family: 'Poppins', sans-serif;
+
+main{
+    width: 90%;
+    margin: auto;
+    color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "monet" "degas" "exhibitions";
+    grid-column-gap: 1.5em;
+}
+
+.intro, .monet, .degas, .exhibitions {
+    padding-top: 2.5em;
+    margin: 0 auto;
+}
+
+.intro{
+    grid-area: intro;
+
+}
+
+.monet{
+    grid-area: monet;
+
+}
+
+.degas{
+    grid-area: degas;
+
+}
+
+.exhibitions{
+    grid-area: exhibitions;
+}
+
+@media (orientation: landscape){
+    main{
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro intro" "monet degas" "exhibitions exhibitions";
+}
 }
 

@@ -1,0 +1,40 @@
+.fix-pos {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    background-color: #34314f;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+
+nav ul {
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+}
+
+@media (min-width: 750px){
+
+    nav {
+        font-size: 1.2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

@@ -1,25 +1,31 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import './App.css';
-import LandingPage from './landing-page';
-import Exhibitions from './exhibitions';
 import Degas from './degas';
+import Exhibitions from './exhibitions';
 import Intro from './intro';
+import LandingPage from './landing-page';
 import Monet from './monet';
+import NavBar from './nav-bar';
 import whiskers from './images/cat.jpg';
 
 class App extends React.Component{  
     render(){
         return(
-            // <Router>
                 <div className='App'>
-                    <LandingPage />
-                    <Intro />
-                    <Monet />
-                    <Degas />
-                    <Exhibitions />
+                    <header>
+                        <LandingPage />
+                        <NavBar />
+
+                    </header>
+                        <main>
+                        <Intro />
+                        <Monet />
+                        <Degas />
+                        <Exhibitions />
+
+                        </main>
                 </div>
-            // </Router>
         );
     }
 }

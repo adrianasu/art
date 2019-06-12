@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Monet(){
     return(
-        <section className="monet">
+        <section className="monet" id="#monet">
             <h2>Monet</h2>
             <p>
                 Claude Monet was the leader of 

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Degas(){
     return(
-        <section className="degas">
+        <section className="degas" id="degas">
             <h2>Degas</h2>
             <p>
                 Edgar Degas sought to capture fleeting moments 

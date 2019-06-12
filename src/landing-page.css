@@ -1,17 +1,81 @@
 .landing-page {
-    margin: auto;
+    height: 35em;
+    width: 100%;
+    position: relative;
 }
-.landing-page img {
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(https://learnodo-newtonic.com/wp-content/uploads/2013/07/Water-Lilies-Nympheas.1-by-Claude-Monet.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    transition: all 1s;
+}
+
+.title {
+    position: absolute;
+    bottom: 20%;
     width: 100%;
 }
 
-.landing-page h1 {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    font-size: 1.8em;
+.title h1 {
+    text-align: center;
+    font-size: 2.4em;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #f6f6f6;
+    color: #fdfdf6;
+    
 }
 
+.landscape {
+    display: none;
+}
+
+.portrait {
+    display: block;
+}
+
+.landing-page:hover .bg-img,
+.landing-page:focus .bg-img {
+    transform: scale(1.01);
+}
+
+@media (orientation: landscape){
+
+    .landing-page {
+        height: 18em;
+    }
+    
+    .bg-img {
+        background-position: left top;
+    }
+
+    .title h1 {
+        font-size: 3.4em;
+        letter-spacing: 5px;
+    }
+
+
+}
+
+@media (min-width: 750px){
+
+    .landing-page {
+        height: 37em;
+    }
+
+    .landing-page .title {
+        bottom: 10%;
+    }
+
+    .title h1 {
+        font-size: 5.5em;
+        letter-spacing: 7px;
+    }
+}
