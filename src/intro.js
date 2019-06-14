@@ -4,7 +4,7 @@ import './intro.css';
 export default function Intro(){
     return(
         <section className="intro" id="intro">
-            <h1>Impressionism</h1>
+            <h2>Impressionism</h2>
             <p>Impressionism can be considered the first distinctly
              modern movement in painting. Developing in Paris in
              the 1860s, its influence spread throughout Europe

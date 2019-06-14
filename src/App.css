@@ -9,24 +9,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    color: #34314f;
-}
+
 
 
 main{
     width: 90%;
     margin: auto;
-    color: gray;
+    color: #222831;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "intro" "monet" "degas" "exhibitions";
     grid-column-gap: 1.5em;
 }
 
-.intro, .monet, .degas, .exhibitions {
-    padding-top: 2.5em;
-    margin: 0 auto;
+.intro, .monet-brief, .degas-brief, .exhibitions {
+    margin: 2em auto;
 }
 
 .intro{
@@ -34,14 +31,14 @@ main{
 
 }
 
-.monet{
+.monet-brief{
     grid-area: monet;
-
+    height: 300px;
 }
 
-.degas{
+.degas-brief{
     grid-area: degas;
-
+    height: 300px;
 }
 
 .exhibitions{

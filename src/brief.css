@@ -1,0 +1,56 @@
+.brief {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.brief h2 {
+    text-transform: uppercase;
+}
+
+.brief .info {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.brief .info p {
+    margin: 1em;
+}
+
+.brief .info a{
+    color: orange;
+    margin-top: 1em;
+    font-size: 2em;
+    transition: color 1s;
+}
+
+.brief .info a:focus,
+.brief .info a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.brief img {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 1s;
+}
+
+.brief:hover .info,
+.brief:focus .info {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #222831;
+    opacity: 0.7;
+}
+
+.brief:hover img,
+.brief:focus img {
+    opacity: 0.3;
+}
