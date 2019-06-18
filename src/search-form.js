@@ -1,11 +1,7 @@
 import React from 'react';
 
 export default class SearchForm extends React.Component {
-    constructor(){
-        this.state = {
-            'zip-code': null
-        }
-    }
+//    fetch results from eventful
 
     render(){
         return(
