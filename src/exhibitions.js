@@ -4,10 +4,11 @@ import Results from './results';
 
 export default function Exhibitions(){
     return(
-        <section className="exhibitions" id="exhibitions">
-            <h2>Exhibitions</h2>
-            <SearchForm />
-            <Results />
-        </section>
+            <section className="exhibitions">
+                <h2>Exhibitions</h2>
+                <p>Find Impressionism's exhibitions in your area.</p>
+                <SearchForm />
+                
+            </section>
     );
 }

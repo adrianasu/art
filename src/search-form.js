@@ -1,12 +1,20 @@
 import React from 'react';
 
-export default function SearchForm(){
-    return(
-        <form>
-            <label>
-                ZipCode
-                <input type="number"></input>
-            </label>
-        </form>
-    )
+export default class SearchForm extends React.Component {
+    constructor(){
+        this.state = {
+            'zip-code': null
+        }
+    }
+
+    render(){
+        return(
+            <form>
+                <label for="zip-code">
+                    ZipCode
+                    <input type="number" name="zip-code"></input>
+                </label>
+            </form>
+        )
+    }
 }

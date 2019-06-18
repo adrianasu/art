@@ -4,52 +4,11 @@
 
 body {
     width: 100%;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
+    background: #313131;
+
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-main{
-    width: 90%;
-    margin: auto;
-    color: #222831;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "intro" "monet" "degas" "exhibitions";
-    grid-column-gap: 1.5em;
-}
-
-.intro, .monet-brief, .degas-brief, .exhibitions {
-    margin: 2em auto;
-}
-
-.intro{
-    grid-area: intro;
-
-}
-
-.monet-brief{
-    grid-area: monet;
-    height: 300px;
-}
-
-.degas-brief{
-    grid-area: degas;
-    height: 300px;
-}
-
-.exhibitions{
-    grid-area: exhibitions;
-}
-
-@media (orientation: landscape){
-    main{
-    
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "intro intro" "monet degas" "exhibitions exhibitions";
-}
-}
 

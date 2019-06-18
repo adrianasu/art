@@ -1,0 +1,48 @@
+.home h2 {
+    text-transform: uppercase;
+}
+
+.art-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "monet" "renoir" "degas";
+    grid-gap: 1.5em;
+}
+
+.intro, .exhibitions, .art-grid, .home h2 {
+    margin: 2em auto;
+    width: 90%;
+    color: #f9f8eb;
+}
+
+.monet-brief{
+    grid-area: monet;
+    height: 300px;
+}
+
+.renoir-brief{
+    grid-area: renoir;
+    height: 300px;
+}
+
+.degas-brief{
+    grid-area: degas;
+    height: 300px;
+}
+
+
+@media (orientation: landscape){
+    .art-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "monet renoir" "degas .";
+    }
+}
+
+@media (min-width: 750px){
+    .art-grid {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "monet renoir degas";
+    }
+}
+

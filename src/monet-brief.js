@@ -1,20 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './brief.css';
 
 export default function MonetBrief(){
     return(
         <section className="monet-brief brief">                  
             <div className="info">
-                <h2>Monet</h2>
+                <h3>Monet</h3>
                 <p>
                     Claude Monet was the leader of 
                     the French Impressionist movement. 
                     Interested in painting in the 
                     open air and capturing natural light.
                 </p>
-                <a href="" title="More">+</a>
+                <Link to="/monet">+</Link>
             </div>
-            <img src="https://learnodo-newtonic.com/wp-content/uploads/2013/07/Impression-Sunrise-by-Claude-Monet.webp" />
         </section>
     );
 }

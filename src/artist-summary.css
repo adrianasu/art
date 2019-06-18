@@ -1,0 +1,71 @@
+.artist-summary {
+    width: 90%;
+    margin: auto;
+    color: #f6f6f6;
+    margin-bottom: 4em;
+}
+
+.artist-summary h2 {
+    text-transform: uppercase;
+}
+
+.art-gallery {
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+.art-item {
+    position: relative;
+    min-width: 100%;
+    text-align: center;
+}
+
+.art-item img {
+    max-width: 340px;
+    height: 300px;
+    transition: opacity .5s;
+}
+
+.art-item .info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    color: black;
+    padding: 1em;
+    transition: display .5s;
+}
+
+.art-item:hover img,
+.art-item:focus img {
+    opacity: .2;
+}
+
+.art-item:hover .info,
+.art-item:focus .info {
+    display: block;
+    opacity: .9;
+}
+
+@media (orientation: landscape){
+
+    .art-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 750px){
+
+    .art-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
